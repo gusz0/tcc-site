@@ -1,1 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #080605;
+    color: #E8DCC8;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Bebas Neue';
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    letter-spacing: 5px;
+}
+
+p {
+    font-family: 'VT323', monospace;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1;
+    color: #D4C4A0;
+}
+
+header img {
+    height: 80px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #1A1612;  
+}
 

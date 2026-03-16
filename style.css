@@ -9,8 +9,10 @@
 
 
 body {
-    background-color: #080605;
+    background-color:#4b0b0b;
     color: #E8DCC8;
+    font-family: 'VT323', monospace;
+    text-align: center;
 }
 
 header {
@@ -23,24 +25,45 @@ header {
 h1 {
     font-family: 'Bebas Neue';
     font-size: 50px;
-    margin-bottom: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
     margin-top: 10px;
-    letter-spacing: 5px;
+  
 }
 
 p {
-    font-family: 'VT323', monospace;
     font-size: 25px;
-    text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
     font-weight: 400;
     line-height: 1;
-    color: #D4C4A0;
+    color: #ffff00;
 }
 
 header img {
     height: 80px;
+}
+
+.jogos h2 {
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 120px;
+    letter-spacing: 4px;
+}
+
+.jogo-principal img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.jogo-principal figcaption h3 {
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+    margin-top: 20px;
 }
 
 .container {
@@ -48,6 +71,6 @@ header img {
     margin: 0 auto;
     padding: 20px;
     min-height: 100vh;
-    background-color: #1A1612;  
+    background-color: #2e2121;  
 }
 

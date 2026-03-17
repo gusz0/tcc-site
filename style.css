@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=VT323&family=Bebas+Neue&display=swap');
 
 * {
@@ -50,7 +49,7 @@ header img {
     font-size: 40px;
     margin-bottom: 20px;
     margin-top: 120px;
-    letter-spacing: 4px;
+    letter-spacing: 4px;    
 }
 
 .jogo-principal img {
@@ -60,17 +59,69 @@ header img {
     border-radius: 10px;
 }
 
+.jogo-principal figcaption {
+    padding-bottom: 100px;
+}
+
 .jogo-principal figcaption h3 {
     font-family: 'Bebas Neue';
     font-size: 30px;
     margin-top: 20px;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    min-height: 100vh;
-    background-color: #2e2121;  
+
+.jogos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 200px;
 }
 
+.jogo-card {
+    background-color: #1a0f0f;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.jogo-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    display: block;
+}
+
+.jogo-card figcaption {
+    padding: 8px 12px 12px;
+}
+
+.jogo-card figcaption h3 {
+    font-family: 'Bebas Neue';
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+max-width: 800px;
+margin: 0 auto;
+padding: 20px;
+min-height: 100vh;
+background-color: #2e2121;  
+box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+}

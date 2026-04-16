@@ -8,7 +8,11 @@
 
 
 body {
-    background-color:#4b0b0b;
+    background-image: url(Imagem\ jogo.jpeg);
+    background-size: contain;
+    background-repeat: repeat-y; /* ou repeat-x testa os dois */
+    background-position: top center;
+
     color: #E8DCC8;
     font-family: 'VT323', monospace;
     text-align: center;
@@ -37,18 +41,21 @@ p {
     text-align: center;
     font-weight: 400;
     line-height: 1;
-    color: #ffff00;
+    color: #fdfca0;
 }
 
 header img {
-    height: 80px;
+    height: 250px;
+    margin-bottom: 70px;
 }
+
+
 
 .jogos h2 {
     font-family: 'Bebas Neue';
     font-size: 40px;
     margin-bottom: 20px;
-    margin-top: 120px;
+    margin-top: 50px;
     letter-spacing: 4px;    
 }
 
@@ -61,6 +68,7 @@ header img {
 
 .jogo-principal figcaption {
     padding-bottom: 100px;
+    letter-spacing: 2px;
 }
 
 .jogo-principal figcaption h3 {
@@ -75,7 +83,7 @@ header img {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     justify-content: center;
-    padding-bottom: 200px;
+    padding-bottom: 150px;
 }
 
 .jogo-card {
@@ -105,6 +113,7 @@ header img {
 
 .video-wrapper {
   position: relative;
+  margin-bottom: 70px;
   padding-bottom: 56.25%;
   height: 0;
 }
@@ -118,10 +127,10 @@ header img {
 }
 
 .container {
-max-width: 800px;
+max-width: 1000px;
 margin: 0 auto;
 padding: 20px;
 min-height: 100vh;
-background-color: #2e2121;  
+background-color: #2b2121;  
 box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
 }

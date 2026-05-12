@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=VT323&family=Bebas+Neue&display=swap');
 
 * {
     margin: 0;
@@ -24,12 +24,18 @@ header {
 }
 
 h1 {
-    font-family: 'Bebas Neue';
+    font-family: 'Barlow Condensed', sans-serif;
     font-size: 50px;
     letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Barlow Condensed', sans-serif;
     text-transform: uppercase;
-    margin-bottom: 30px;
-    margin-top: 10px;
+    font-size: 35px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
 }
 
 p {
@@ -46,19 +52,26 @@ header img {
     margin-bottom: 70px;
 }
 
-.jogos h2 {
-    font-family: 'Bebas Neue';
-    font-size: 40px;
-    margin-bottom: 20px;
-    margin-top: 50px;
-    letter-spacing: 4px;
+.sobre {
+    padding: 40px 20px;
+    background-color: rgba(26, 15, 15, 0.3);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.jogos {
+    padding: 20px;
+    background-color: rgba(26, 15, 15, 0.3);
+    border-radius: 10px;
+    margin-bottom: 30px;
 }
 
 .jogo-principal img {
     display: block;
-    width: 100%;
+    width: 90%;
     height: auto;
     border-radius: 10px;
+    margin: 0 auto;
 }
 
 .jogo-principal figcaption {
@@ -67,7 +80,8 @@ header img {
 }
 
 .jogo-principal figcaption h3 {
-    font-family: 'Bebas Neue';
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
     font-size: 30px;
     margin-top: 20px;
 }
@@ -77,7 +91,7 @@ header img {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     justify-content: center;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
 }
 
 .jogo-card {
@@ -87,12 +101,17 @@ header img {
     transition: transform 0.3s ease;
 }
 
-.jogo-card img {
+.placeholder {
     width: 100%;
-    height: auto;
-    aspect-ratio: 2 / 3;
-    object-fit: cover;
-    display: block;
+    aspect-ratio: 2/3;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #444;
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 .jogo-card figcaption {
@@ -100,22 +119,20 @@ header img {
 }
 
 .jogo-card figcaption h3 {
-    font-family: 'Bebas Neue';
+    font-family: 'barlow condensed', sans-serif;
     font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     margin-top: 10px;
 }
 
 .video-wrapper {
-    position: relative;
-    margin-bottom: 70px;
-    padding-bottom: 56.25%;
-    height: 0;
+    width: 90%;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
 }
 
 .video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
 }
@@ -128,7 +145,10 @@ header img {
     height: 100%;
     object-fit: cover;
     z-index: -1;
+}
 
+.contato-links a {
+  color: inherit;
 }
 
 .container {

@@ -59,6 +59,13 @@ header img {
     margin-bottom: 40px;
 }
 
+.contato {
+    padding: 20px;
+    background-color: rgba(26, 15, 15, 0.3);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
 .jogos {
     padding: 20px;
     background-color: rgba(26, 15, 15, 0.3);

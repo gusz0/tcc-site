@@ -14,6 +14,7 @@ body {
     color: #E8DCC8;
     font-family: 'VT323', monospace;
     text-align: center;
+    padding-top: 80px;
 }
 
 header {
@@ -21,6 +22,51 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+}
+
+.navbar {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+}
+
+.navbar-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 55px;
+  width: auto;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  color: #E8DCC8;
+  text-decoration: none;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+}
+
+.navbar-links a:hover {
+  color: #f0c040;
 }
 
 h1 {
